@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pabz | Social Media Site</title>
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+<!-- Body Start  -->
+<!-- Navigation -->
+<!--Kinopya ko lang to sa bootstrap website hahaha-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary navigation-main align-items-center">
+  <a class="navbar-brand font-weight-bold" href="#"><i class="fas fa-hashtag mr-2"></i>BaceFook</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto text-white navbar-user-panel">
+      <li class="nav-item mr-2 mr-lg-0">
+        <span>Good day, <b>John Doe</b>!</span>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img src="assets/img/user-image2-sm.jpg" class="nav-profile-image" alt=""> </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="#">Account</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Jumbotron/Hero Header -->
+<!--  jumbotron-hero class ay para sa jumbotron na hero. Dapat di ka nag ooverwrite ng mga classes ni bootstrap para di magulo. pag may aapply kang ibang style, gawa ka nalang ng bagong class-->
+<div class="jumbotron jumbotron-fluid jumbotron-hero">
+  <!-- Jumbotron Content -->
+  <!-- Pag gagawa ka ng may content, lagi dapat may div na may 'container' na class, para may wrapper sya, pantay lagi ang content pag ganyan. Tapos sa loob may div na may 'row' na class. yung columns sa loob, col-<screen-size>-<column size> yan. Dapat di lalampas sa 12 total ang columns. Kunwari gusto mo 3 columns, edi tatlong col-lg-4 yan. Usually col-md-<size> ang ginagamit ko. Kaso para maging responsive ang layout, LG ang ginamit ko para sa mga large screens (1024px) sya mag aadjust -->
+  <!-- screen sizes: xs(extra-small)=340px ,sm(small)=540px, md(medium)=994px, lg=(1024px), xl=(1600px). ata lang yang mga width, pero parang ganun na yan. Para lang may idea ka kung anong ibig sabihin ng xs to xl   -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="profile-image">
+          <img src="assets/img/user-image2-med.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="profile-follow-button">
+          <!--Yung 'pr-1' na class ay pang lagay ng padding. Utility class sya ng bootstrap para di ka na css ng css ng padding. Meron yan padding at margin. p<direction>-<size(1 to 5)> ang format ng padding ex. 'pl-5' ay padding-left na malaki, pag 'pl-1' maliit na padding sa left ng element. 'm' kapag margin. Ang direction nyan eh 't'=top, 'r'=right, 'b'=bottom, 'l'=left. Pwede din walang direction, ex. 'p-3' or 'm-3' palibot yan. Pwede din na x and y, pag px or mx left and right ang may padding/margin. Pag py or my, top and bottom.-->
+          <!--Yung 'fas fa-user-plus' naman eh icon. Check mo website ng font-awesome para sa mga class ng icons-->
+          <button class="btn btn-primary btn-sm"><i class="fas fa-user-plus pr-1"></i> Follow</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main mb-5">
+  <div class="container">
+    <div class="row">
+      <!-- Content left -->
+      <!-- Lagi kang gagawa ng isa pang div sa loob ng mga column. Para di masapawan yung CSS mismo ng column-->
+      <div class="col-lg-3">
+        <div class="content-left">
+          <h3>John Doe</h3>
+          <p>Lorem Ipsum, 23</p>
+          <blockquote class="blockquote">
+            <p><i class="fas fa-quote-left pr-2"></i>Vivamus erat est, vestibulum vitae sapien eu. <i class="fas fa-quote-right pl-2"></i>
+            </p>
+          </blockquote>
+        </div>
+      </div>
+      <!-- Content right -->
+      <div class="col-lg-9">
+        <div class="content-right">
+          <div class="p-3 bg-white content-right-box mb-3">
+            <div class="input-group flex-nowrap">
+              <input type="text" class="form-control mr-2" placeholder="Write something..">
+              <button class="btn btn-primary">Post</button>
+            </div>
+          </div>
+          <div class="p-3 bg-white content-right-box mb-3">
+            <div class="media content-post">
+              <img src="assets/img/user-image1-sm.jpg" class="content-post-image mr-3" alt="...">
+              <div class="media-body">
+                <div class="d-flex align-items-center justify-content-between mb-2 ">
+                  <h4 class="mr-2 mb-0">
+                    <a href="#">@loremIpsum</a>
+                  </h4>
+                </div>
+                <div class="content-post-caption mb-3">
+                  <p class="mb-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                  <span class="small text-muted pb-3">Feb 23, 2020 00:20</span>
+                </div>
+                <div class="content-hit-counter text-muted mb-2">
+                  <span class="mr-2">23<i class="far fa-thumbs-up pl-1"></i></span>
+                  <span class="mr-2">18<i class="far fa-comment-dots pl-1"></i></span>
+                  <span class="mr-2">3<i class="fa fa-reply pl-1"></i></span>
+                </div>
+                <div class="content-post-interaction text-muted">
+                  <a href="#" class="pr-3">Like</a>
+                  <a href="#" class="pr-3">Comment</a>
+                  <a href="#" class="pr-3">Share</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-3 bg-white content-right-box mb-3">
+            <div class="media content-post">
+              <img src="assets/img/user-image2-sm.jpg" class="content-post-image mr-3" alt="...">
+              <div class="media-body">
+                <div class="d-flex align-items-center justify-content-between mb-2 ">
+                  <h4 class="mr-2 mb-0">
+                    <a href="#">@loremIpsum</a>
+                  </h4>
+                </div>
+                <div class="content-post-caption mb-3">
+                  <p class="mb-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                  <span class="small text-muted pb-3">Feb 23, 2020 00:20</span>
+                </div>
+                <div class="content-hit-counter text-muted mb-2">
+                  <span class="mr-2">23<i class="far fa-thumbs-up pl-1"></i></span>
+                  <span class="mr-2">18<i class="far fa-comment-dots pl-1"></i></span>
+                  <span class="mr-2">3<i class="fa fa-reply pl-1"></i></span>
+                </div>
+                <div class="content-post-interaction text-muted">
+                  <a href="#" class="pr-3">Like</a>
+                  <a href="#" class="pr-3">Comment</a>
+                  <a href="#" class="pr-3">Share</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-3 bg-white content-right-box mb-3">
+            <div class="media content-post">
+              <img src="assets/img/user-image2-sm.jpg" class="content-post-image mr-3" alt="...">
+              <div class="media-body">
+                <div class="d-flex align-items-center justify-content-between mb-2 ">
+                  <h4 class="mr-2 mb-0">
+                    <a href="#">@loremIpsum</a>
+                  </h4>
+                </div>
+                <div class="content-post-caption mb-3">
+                  <p class="mb-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                  <span class="small text-muted pb-3">Feb 23, 2020 00:20</span>
+                </div>
+                <div class="content-post-media mb-3">
+                  <img src="assets/img/high-angle-view-of-people-on-bicycle-248547.jpg" class="content-post-media_image" alt="">
+                </div>
+                <div class="content-hit-counter text-muted mb-2">
+                  <span class="mr-2">23<i class="far fa-thumbs-up pl-1"></i></span>
+                  <span class="mr-2">18<i class="far fa-comment-dots pl-1"></i></span>
+                  <span class="mr-2">3<i class="fa fa-reply pl-1"></i></span>
+                </div>
+                <div class="content-post-interaction text-muted">
+                  <a href="#" class="pr-3">Like</a>
+                  <a href="#" class="pr-3">Comment</a>
+                  <a href="#" class="pr-3">Share</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer bg-dark py-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center">
+          <span class="text-muted small"> All rights reserved | &copy; 2019</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="vendors/jquery/jquery-3.4.1.min.js"></script>
+<script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendors/fontawesome/js/all.min.js"></script>
+</body>
+</html>
